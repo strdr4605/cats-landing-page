@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cats-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.cats-section h2 {
+  margin-top: 0;
+}
+
+.cats-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.cat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
