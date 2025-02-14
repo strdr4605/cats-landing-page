@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+header h1 {
+  margin-left: 40px;
+}
+
 .cats-section {
   display: flex;
   flex-direction: column;
