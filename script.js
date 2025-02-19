@@ -2,10 +2,8 @@ const cat1 = document.getElementById("cat1");
 const cat2 = document.getElementById("cat2");
 const cat3 = document.getElementById("cat3");
 
-cat1.addEventListener("click", function () {
-  console.log("clicked on cat1");
-
-  const dialog = cat1.getElementsByTagName("dialog")[0];
+function openCatDialog(catElement) {
+  const dialog = catElement.getElementsByTagName("dialog")[0];
   dialog.open = true;
 
   const closeBtn = dialog.getElementsByClassName("close-dialog")[0];
@@ -14,32 +12,16 @@ cat1.addEventListener("click", function () {
     event.stopPropagation();
     dialog.open = false;
   });
+}
+
+cat1.addEventListener("click", function () {
+  openCatDialog(cat1);
 });
 
 cat2.addEventListener("click", function () {
-  console.log("clicked on cat2");
-
-  const dialog = cat2.getElementsByTagName("dialog")[0];
-  dialog.open = true;
-
-  const closeBtn = dialog.getElementsByClassName("close-dialog")[0];
-
-  closeBtn.addEventListener("click", function (event) {
-    event.stopPropagation();
-    dialog.open = false;
-  });
+  openCatDialog(cat2);
 });
 
 cat3.addEventListener("click", function () {
-  console.log("clicked on cat3");
-
-  const dialog = cat3.getElementsByTagName("dialog")[0];
-  dialog.open = true;
-
-  const closeBtn = dialog.getElementsByClassName("close-dialog")[0];
-
-  closeBtn.addEventListener("click", function (event) {
-    event.stopPropagation();
-    dialog.open = false;
-  });
+  openCatDialog(cat3);
 });
