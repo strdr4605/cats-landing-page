@@ -16,7 +16,6 @@ header h1 {
   background-color: #f4f4f4;
   padding: 2rem;
 }
-
 .cats-section h2 {
   margin-top: 0;
 }
@@ -34,6 +33,10 @@ header h1 {
   align-items: center;
 
   cursor: pointer;
+}
+
+.cat-img{
+ border-radius: 10px; 
 }
 
 dialog {
