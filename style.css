@@ -16,6 +16,7 @@ header h1 {
   background-color: #f4f4f4;
   padding: 2rem;
 }
+
 .cats-section h2 {
   margin-top: 0;
 }
@@ -35,7 +36,7 @@ header h1 {
   cursor: pointer;
 }
 
-.cat-img{
+.cat-img {
  border-radius: 10px; 
 }
 
