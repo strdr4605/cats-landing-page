@@ -43,14 +43,14 @@ function showCats() {
     catContainer.classList.add("cat-container");
 
     catContainer.innerHTML = `
-    <img src="${currentCat.imageSrc}" alt="Cat 1" />
+    <img src="${currentCat.imageSrc}" class="cat-img" alt="${currentCat.name}" />
           <p>${currentCat.name}</p>
           <dialog>
             <div class="dialog-content">
               <img
                 class="dialog-img"
                 src="${currentCat.imageSrc}"
-                alt="Cat 1"
+                alt="${currentCat.name}"
               />
               <h3>${currentCat.name}</h3>
               <p>${currentCat.description}</p>

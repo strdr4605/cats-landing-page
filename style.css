@@ -36,6 +36,10 @@ header h1 {
   cursor: pointer;
 }
 
+.cat-img {
+  border-radius: 10px; 
+}
+
 dialog {
   position: fixed;
   top: 20px;
